@@ -1,0 +1,36 @@
+[cli]
+flavour = RDM
+logfile = /logs/invenio-cli.log
+
+[cookiecutter]
+project_name = GMAP
+project_shortname = gmap
+project_site = data.europlanet-gmap.eu
+github_repo = europlanet-gmap/rdm
+description = GMAP InvenioRDM Instance
+author_name = CERN
+author_email = cbrandt@jacobs-university.de
+year = 2021
+python_version = 3.8
+database = postgresql
+elasticsearch = 7
+file_storage = local
+development_tools = yes
+_template = https://github.com/inveniosoftware/cookiecutter-invenio-rdm.git
+
+[files]
+docker-compose.full.yml = 78824308e6515123f008695855546cd0e8954aaa2567a11c6eb5e05e60927391
+static = {'images': {'invenio-rdm.svg': '50f09b4d83244a69c58f44aa436a3fa097726d9b47fd0e0782ea92d31f854b65', 'logo-invenio-white.svg': '5af2c7b67a09798cba3d50cc2e811ca9fd2ff73b40d9d2a52a97237b9ed44008'}}
+docker-services.yml = 1419e8cf28cc45c32f687f245a77fd7b64bc3ef2cb6815c147dab329d225db13
+docker-compose.yml = 8b66658940c970dac0bd720e3af4419c6a3cb8b71ea183024f6e17835ba7a9aa
+pipfile = 5476d723c4d78d7273ce9f8a9837e37fc8f37c8c67a530344b8975dbf8339f98
+invenio.cfg = 71f703acd8c9cbb33dccb86e1ee0ee26dbe6891c518909166ea992f3f82d2385
+app_data = {'vocabularies': {'affiliations_ror.yaml': '2e913fbecacd3694cba1b9a10739164911c2d45db3b32f1cb923027c48e0ac3e', 'subjects_oecd_fos.yaml': 'eef38714c506d956193c3be17e6004049525d252bf22424f4804dfc1ad46db44'}, 'vocabularies.yaml': '21218eeb7c8c08918e242d1ea8110328e37d7cd891ccc7ee142b6f4aba34ba08', 'README.md': 'd58978488626bdeddc791a15a39e341a4ed06f202b84d0c0d4aa9ef49481c6d9'}
+docker = {'nginx': {'test.key': '85cf9faa3f1f7caa5739656ece395d7d152a455c36624b5faef25860f9879cf1', 'test.crt': 'f58bfb0bc2a66d1029985281e88df370df5d2779168419c6c526db1a9ca2e3e7', 'conf.d': {'default.conf': '9397770d56124ae53848e300bdf976d55653c47fbf8d47a7dc8c3ee2b830e6d5'}, 'nginx.conf': '6c9a6e372fc340dfcd3b49e6a30bd7bd36af41d79d1d093b7b3ba5f4c9d781b4', 'Dockerfile': '541326766beaba2e8492255c99e11aa76640d71329ceab5bcab1c8d6a979bd5c'}, 'uwsgi': {'uwsgi_rest.ini': 'c36fc5021baf15f375b3b6c825f7753e5d166319c5fe38a85b604391ce5b37b6', 'uwsgi_ui.ini': 'c80168dc8d29086b876caab41b5057fddef46bdc748c5ecf213f684aa73cc90c'}}
+.dockerignore = 21241bc12cdf4ac5f209d6b191adc8f25eb89af93ce5c4c3f72c86661162d7b5
+.gitignore = af1182c70588e583daeb35809e6cdfe3408425d438c3ceb282b1f4b8360290e2
+readme.md = c967bfc824190584d8a6f9596cc8b367dab7c35c42ae855e70dc878d2730591e
+assets = {'templates': {'search': {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}}, 'less': {'theme.config': '6ac6cb587f64c190e0673254f76c1dd3b19d1a0bc948d21cae1523da30f37d1e', 'site': {'globals': {'site.variables': 'e168dee88a3a79816cc3dea83553da83cfc49432fdf0c9b219149713d6e1f21c', 'site.overrides': 'edc99163041bb2c35cced6479b6ab723c11df9785128288ed05813f78c58fc23'}}}}
+templates = {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}
+dockerfile = 6ed7ddece5c52c1b75aa764cf38cfc3a0a4209e824ab66e9930f67012fb2e170
+
