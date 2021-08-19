@@ -1,3 +1,6 @@
+# my remote-app (oauth) secrets
+remote_app_secret.rc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
