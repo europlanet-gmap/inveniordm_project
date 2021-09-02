@@ -22,6 +22,17 @@ Once running, visit https://127.0.0.1 in your browser.
 **Note**: The server is using a self-signed SSL certificate, so your browser
 will issue a warning that you will have to by-pass.
 
+## Run InvenioRDM in devel
+
+This (to be) instance of InvenioRDM uses our Gitlab instance to authenticate.
+An application key/secret is necessary. Invenio reads those values from the
+environment variables:
+```bash
+CONSUMER_KEY=<gitlab-europlanet-gmap-app-client-ID>
+CONSUMER_SECRET=<gitlab-europlanet-gmap-app-client-SECRET>
+```
+
+
 ## Overview
 
 Following is an overview of the generated files and folders:
