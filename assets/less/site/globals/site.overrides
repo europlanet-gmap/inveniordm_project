@@ -1,1 +1,50 @@
+/*
+ * Default values:
+ * https://github.com/inveniosoftware/invenio-app-rdm/blob/master/invenio_app_rdm/theme/assets/semantic-ui/less/invenio_app_rdm/variables.less
+ * 
+ * Documentation about:
+ * https://inveniordm.docs.cern.ch/customize/styling-theme/
+ */
+
 @import "@less/invenio_app_rdm/theme";
+
+// @brandColor: #009900;
+// 
+// @navbar_background_image: unset;
+// @navbar_background_color: @brandColor;
+// @footerLightColor: @brandColor;
+// @footerDarkColor: #003300;
+
+@navbar_background_image: linear-gradient(rgba(3, 119, 205, 1), rgba(0, 153, 0, 0.69));
+@navbar_background_color: rgba(3,119,205,1);
+@brand-primary: #0377cd;
+@versionActive: #d9edf7;
+
+@signupColor: @green;
+@searchButtonColor: #fb8273;
+
+@coverPageDefaultMargin: 0;
+
+@accessRightOpen: @green;
+@accessRightRestricted: @red;
+@accessRightEmbargoed: @yellow;
+@accessRightMetadataOnly: @red;
+
+@restricted-components-background-color: #f502020f;
+@restricted-components-border-color: #e0b4b4;
+@embargoed-components-background-color: #c7a00014;
+@embargoed-components-border-color: #c9ba9b;
+
+@footerLightColor: #0377cd;
+@footerDarkColor: #0047a8;
+@footerTextLightColor: rgba(255, 255, 255, 0.86);
+@footerTextDarkColor: #ffffff;
+
+@font-size-base: 14px;
+@font-size-small: 12px;
+@font-size-tiny: 10px;
+@font-size-massive: 36px;
+
+/* Main colors */
+
+@brandColor: @primaryColor;

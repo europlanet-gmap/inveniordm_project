@@ -1,0 +1,102 @@
+{#
+  Copyright (C) 2019-2020 CERN.
+  Copyright (C) 2019-2020 Northwestern University.
+  Copyright (C)      2021 Graz University of Technology.
+
+  Invenio App RDM is free software; you can redistribute it and/or modify it
+  under the terms of the MIT License; see LICENSE file for more details.
+#}
+
+<footer class="footer-global">
+  <div class="ui grid">
+    {%- block footer_top %}
+    <div class="row footer-top">
+      <div class="ui container">
+        <div class="ui grid">
+          <div class="invenio-rdm-footer">
+            {%- block footer_top_left %}
+            <div class="ui row grid">
+              <div class="rdm-footer">
+                <h4>{{_ ("About GMAP")}}</h4>
+
+                {% trans gmap_www="https://europlanet-gmap.eu/" %}
+                <p class="margin-small"><a href="{{gmap_www}}">Website</a></p>
+                {% endtrans %}
+
+                {% trans gmap_wiki="https://wiki.europlanet-gmap.eu/" %}
+                <p class="margin-small"><a href="{{gmap_wiki}}">Wiki</a></p>
+                {% endtrans %}
+              </div>
+              <div class="rdm-footer">
+                <h4>{{_ ("Get involved")}}</h4>
+                {% trans gmap_va_call="https://www.europlanet-gmap.eu/collaborate/" %}
+                <p class="margin-small"><a href="{{gmap_va_call}}">Collaborate</a></p>
+                {% endtrans %}
+{#
+                {% trans invenio_rdm_milestones="https://github.com/inveniosoftware/product-rdm" %}
+                <p class="margin-small"><a href="{{invenio_rdm_milestones}}">Project Milestones</a></p>
+                {% endtrans %}
+                {% trans invenio_rdm_docs_site="http://inveniordm.docs.cern.ch" %}
+                <p class="margin-small"><a href="{{invenio_rdm_docs_site}}">Documentation</a></p>
+                {% endtrans %}
+              </div>
+              <div class="rdm-footer">
+                <h4>{{_ ("Community")}}</h4>
+                {% trans invenio_rdm_chatroom="https://discord.gg/8qatqBC" %}
+                <p class="margin-small"><a href="{{invenio_rdm_chatroom}}">Chatroom</a></p>
+                {% endtrans %}
+                {% trans invenio_rdm_talk="https://invenio-talk.web.cern.ch/c/projects/invenio-rdm" %}
+                <p class="margin-small"><a href="{{invenio_rdm_talk}}">Forum</a></p>
+                {% endtrans %}
+                {% trans invenio_events="https://inveniosoftware.org/events/" %}
+                <p class="margin-small"><a href="{{invenio_events}}">Events & training</a></p>
+                {% endtrans %}
+#}
+              </div>
+            </div>
+            {%- endblock footer_top_left %}
+          </div>
+          <div class="six wide column right aligned">
+            {%- block footer_top_right %}
+            {%- endblock footer_top_right %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {%- endblock footer_top %}
+    {%- block footer_bottom %}
+    <div class="row footer-bottom">
+      <div class="ui container">
+        <div class="ui grid">
+          <div class="eight wide column left middle aligned">
+            {%- block footer_bottom_left %}
+            {% trans europlanet_www="https://www.europlanet-society.org/europlanet-2024-ri/" %}
+            <a href="{{europlanet_www}}">Europlanet 2024 RI</a>
+            {% endtrans %}
+            <p>Funded by European Union's Horizon 2020 Research and Innovation programme<br/>
+               (grant agreement N<sup>o</sup> 871149)</p>
+            {%- endblock footer_bottom_left %}
+          </div>
+          <div class="eight wide column middle right aligned">
+            {%- block footer_bottom_right %}
+            {% trans invenio_rdm="http://inveniosoftware.org/products/rdm" %}Powered by <a
+              href="{{invenio_rdm}}">InvenioRDM</a>{% endtrans %}
+            {%- endblock footer_bottom_right %}
+          </div>
+{#
+          <div class="eight wide column right aligned">
+            {%- block footer_bottom_right %}
+            {%- if config.I18N_LANGUAGES %}
+            {% from "invenio_i18n/macros/language_selector.html" import language_selector_dropdown %}
+            {{ language_selector_dropdown() }}
+            {%- endif %}
+            {%- endblock footer_bottom_right %}
+          </div>
+#}
+        </div>
+      </div>
+    </div>
+    {%- endblock footer_bottom %}
+  </div>
+</footer>
+
